@@ -1,0 +1,11 @@
+.searchForm {
+  padding: 2rem 0;
+  text-align: center;
+  &_input {
+    width: 50%;
+    padding: 1rem;
+    box-shadow: 0 0 10px $color-white;
+    border: transparent;
+    border-radius: 0.5rem;
+  }
+}
