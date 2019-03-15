@@ -1,9 +1,18 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 import { fetchMovies } from "../actions";
 
 class SearchForm extends Component {
+  static get propTypes() {
+    return { getMovies: PropTypes.func.isRequired };
+  }
+
+  static defaultProps = {
+    getMovies: () => {}
+  };
+
   constructor(props) {
     super(props);
     this.state = {
