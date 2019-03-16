@@ -40,7 +40,5 @@ export default connect(
     movies: movieList,
     isLoading
   }),
-  dispatch => ({
-    getMoveDetail: id => dispatch(fetchMovieDetails(id))
-  })
+  { getMoveDetail: fetchMovieDetails }
 )(MovieList);

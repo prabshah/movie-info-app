@@ -54,7 +54,5 @@ class SearchForm extends Component {
 
 export default connect(
   null,
-  dispatch => ({
-    getMovies: movie => dispatch(fetchMovies(movie))
-  })
+  { getMovies: fetchMovies }
 )(SearchForm);
