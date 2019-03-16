@@ -1,2 +1,3 @@
-const APIKEY = `87ef53d4`;
+import { APIKEY } from "./secret";
+
 export const BASE_URL = `http://www.omdbapi.com/?apikey=${APIKEY}&`;
